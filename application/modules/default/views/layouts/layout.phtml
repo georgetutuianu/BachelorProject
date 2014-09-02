@@ -1,0 +1,16 @@
+<?php echo $this->doctype() ?>
+<html>
+    <head>
+        <?php echo $this->headMeta() ?>
+        <title>
+            <?php echo $this->pageTitle ?>
+        </title>
+        <?php echo $this->bundleLink() ?>
+    </head>
+    <body>
+
+        <?php echo $this->layout()->content ?>
+
+        <?php echo $this->bundleScript() ?>
+    </body>
+</html>

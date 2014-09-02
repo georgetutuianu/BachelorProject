@@ -1,0 +1,29 @@
+Adding vhost
+---------------------------------------------------------
+#vhost for project
+<VirtualHost *:80>
+   DocumentRoot "{PATH_TO_PROJECT}\public"
+   ServerName {URL_ADDRESS}
+
+   # This should be omitted in the production environment
+   SetEnv APPLICATION_ENV {ENVIRONMENT}
+
+   <Directory "{PATH_TO_PROJECT}\public">
+       Options Indexes MultiViews FollowSymLinks
+       AllowOverride All
+       Order allow,deny
+       Allow from all
+   </Directory>
+
+</VirtualHost>
+=========================================================
+
+Needed apache modules
+---------------------------------------------------------
+rewrite_module
+=========================================================
+
+Needed PHP extensions
+---------------------------------------------------------
+php_curl
+=========================================================

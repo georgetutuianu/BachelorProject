@@ -1,0 +1,84 @@
+{
+    "production" : {
+        "phpSettings" : {
+            "display_startup_errors" : false,
+            "display_errors" : false,
+            "log_errors" : true,
+            "error_log" : "APPLICATION_PATH/../data/logs/php-error.log"
+        },
+        "includePaths" : {
+            "library" : "APPLICATION_PATH/../library"
+        },
+        "bootstrap" : {
+            "path" : "APPLICATION_PATH/modules/default/Bootstrap.php",
+            "class" : "Bootstrap"
+        },
+        "appnamespace" : "Application",
+        "autoloaderNamespaces" : {
+            "Utility" : "Utility_", 
+            "BundlePhu" : "BundlePhu_"
+        },
+        "resources" : {
+            "db" : {
+                "adapter" : "pdo_mysql",
+                "params" : {
+                    "host" : "",
+                    "username" : "",
+                    "password" : "",
+                    "dbname" : "",
+                    "charset" : "UTF8"
+                }
+            },
+            "view" : {
+                "helperPath" : "APPLICATION_PATH/../library/BundlePhu/View/Helper",
+                "helperPathPrefix" : "BundlePhu_View_Helper",
+                "charset" : "UTF-8",
+                "doctype" : "HTML5"
+            },
+            "frontController" : {
+                "controllerDirectory" : "APPLICATION_PATH/modules/default/controllers",
+                "params" : {
+                    "displayExceptions" : false
+                }
+            },
+            "layout" : {
+                "layoutPath" : "APPLICATION_PATH/modules/default/views/layouts"
+            }
+        }
+    },
+    "staging" : {
+        "_extends" : "production"
+    },
+    "testing" : {
+        "_extends" : "production",
+        "phpSettings" : {
+            "display_startup_errors" : true,
+            "display_errors" : true
+        }
+    },
+    "development" : {
+        "_extends" : "production",
+        "phpSettings" : {
+            "display_startup_errors" : true,
+            "display_errors" : true
+        },
+        "resources" : {
+            "db" : {
+                "params" : {
+                    "host" : "127.0.0.1",
+                    "username" : "root",
+                    "password" : "",
+                    "profiler" : {
+                        "class" : "Zend_Db_Profiler_Firebug",
+                        "enabled" : true
+                    }
+                }
+            },
+            "frontController" : {
+                "params" : {
+                    "displayExceptions" : true
+                }
+            }
+        }
+    }
+}

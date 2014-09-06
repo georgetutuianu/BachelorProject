@@ -1,0 +1,18 @@
+[06-Sep-2014 17:53:10 UTC] PHP Fatal error:  Class 'LoginForm' not found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php on line 12
+[06-Sep-2014 17:53:10 UTC] PHP Stack trace:
+[06-Sep-2014 17:53:10 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 17:53:10 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 17:53:10 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 17:53:10 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 17:53:10 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 17:53:10 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 17:53:10 UTC] PHP   7. AuthenticationController->loginFormAction() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:516
+[06-Sep-2014 18:38:14 UTC] PHP Fatal error:  Call to undefined function var_dum() in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php on line 17
+[06-Sep-2014 18:38:14 UTC] PHP Stack trace:
+[06-Sep-2014 18:38:14 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 18:38:14 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 18:38:14 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 18:38:14 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 18:38:14 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 18:38:14 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 18:38:14 UTC] PHP   7. IndexController->indexAction() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:516

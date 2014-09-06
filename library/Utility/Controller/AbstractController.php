@@ -21,8 +21,27 @@ class Utility_Controller_AbstractController extends Zend_Controller_Action
     public function postDispatch()
     {
         $this->_setPageTitleForView();
+        $this->_setApplicationNameForView();
+        
+        $authController = Zend_Auth::getInstance();
+        $user = $authController->getIdentity();
+        $this->view->userEmail = $user['email'];
+        
+        $this->view->bundleLink()
+                   ->appendStylesheet('/css/libraries/bootstrap.min.css')
+                   ->appendStylesheet('/css/custom/layout.css');
     }
-
+    
+    protected function _checkLoggedUser()
+    {
+        $authController = Zend_Auth::getInstance();
+        $userDetails = $authController->getIdentity();
+        
+        if (!array_key_exists('email', $userDetails)) {
+            $this->_redirect('/');
+        }
+    }
+    
     /**
      * Get the name of the application
      *
@@ -48,6 +67,14 @@ class Utility_Controller_AbstractController extends Zend_Controller_Action
         return $this->_pageTitle;
     }
 
+    protected function _setApplicationNameForView()
+    {
+        $configs = Zend_Registry::get('configs');
+
+        $applicationName = $configs->application->name;
+        $this->view->applicationName = $applicationName;
+    }
+    
     /**
      * Set the name for the current page
      *

@@ -1,0 +1,224 @@
+2014-09-06T20:46:02+03:00 ERR (3): 127.0.0.1 : script 'authentication/login.phtml' not found in path (C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/modules/default/views/layouts/;C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/default/views\scripts/)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(884): Zend_View_Abstract->_script('authentication/...')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('authentication/...')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('authentication/...', NULL)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 [internal function]: Zend_View_Helper_Action->action('login', 'authentication', NULL)
+#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(350): call_user_func_array(Array, Array)
+#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(19): Zend_View_Abstract->__call('action', Array)
+#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(19): Zend_View->action('login', 'authentication', NULL)
+#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php(108): include('C:\Users\George...')
+#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(888): Zend_View->_run('C:\Users\George...')
+#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Layout\Controller\Plugin\Layout.php(143): Zend_Layout->render()
+#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Plugin\Broker.php(333): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#17 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#18 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#19 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#20 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+#21 {main} 
+ #0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+#4 {main} 
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, '127.0.0.1 : scr...', 'C:\Users\George...', 37, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(37): trigger_error('127.0.0.1 : scr...', 256)
+	#2 {main}
+
+2014-09-06T20:46:04+03:00 ERR (3): 127.0.0.1 : script 'authentication/login.phtml' not found in path (C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/modules/default/views/layouts/;C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/default/views\scripts/)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(884): Zend_View_Abstract->_script('authentication/...')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('authentication/...')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('authentication/...', NULL)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Action.php(135): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+#8 [internal function]: Zend_View_Helper_Action->action('login', 'authentication', NULL)
+#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(350): call_user_func_array(Array, Array)
+#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(19): Zend_View_Abstract->__call('action', Array)
+#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(19): Zend_View->action('login', 'authentication', NULL)
+#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php(108): include('C:\Users\George...')
+#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(888): Zend_View->_run('C:\Users\George...')
+#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Layout.php(796): Zend_View_Abstract->render('layout.phtml')
+#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Layout\Controller\Plugin\Layout.php(143): Zend_Layout->render()
+#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Plugin\Broker.php(333): Zend_Layout_Controller_Plugin_Layout->postDispatch(Object(Zend_Controller_Request_Http))
+#17 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#18 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#19 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#20 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+#21 {main} 
+ #0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Http))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+#4 {main} 
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, '127.0.0.1 : scr...', 'C:\Users\George...', 37, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(37): trigger_error('127.0.0.1 : scr...', 256)
+	#2 {main}
+
+2014-09-06T20:53:10+03:00 ERR (3): include_once(LoginForm.php): failed to open stream: No such file or directory
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(134): Utility_Controller_ErrorController::phpErrorsAction(2, 'include_once(Lo...', 'C:\Users\George...', 134, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(134): Zend_Loader::loadFile()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(82): Zend_Loader::loadFile('LoginForm.php', NULL, true)
+	#3 [internal function]: Zend_Loader::loadClass('LoginForm')
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader\Autoloader.php(479): call_user_func(Array, 'LoginForm')
+	#5 [internal function]: Zend_Loader_Autoloader->_autoload('LoginForm')
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader\Autoloader.php(124): call_user_func(Array, 'LoginForm')
+	#7 [internal function]: Zend_Loader_Autoloader::autoload('LoginForm')
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(12): spl_autoload_call('LoginForm')
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginFormAction()
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginFormAction')
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#15 {main}
+
+2014-09-06T20:53:10+03:00 ERR (3): include_once(): Failed opening 'LoginForm.php' for inclusion (include_path='C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/../library;C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library;.;C:\php\pear')
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(134): Utility_Controller_ErrorController::phpErrorsAction(2, 'include_once():...', 'C:\Users\George...', 134, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(134): Zend_Loader::loadFile()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php(82): Zend_Loader::loadFile('LoginForm.php', NULL, true)
+	#3 [internal function]: Zend_Loader::loadClass('LoginForm')
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader\Autoloader.php(479): call_user_func(Array, 'LoginForm')
+	#5 [internal function]: Zend_Loader_Autoloader->_autoload('LoginForm')
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader\Autoloader.php(124): call_user_func(Array, 'LoginForm')
+	#7 [internal function]: Zend_Loader_Autoloader::autoload('LoginForm')
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(12): spl_autoload_call('LoginForm')
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginFormAction()
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginFormAction')
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#15 {main}
+
+2014-09-06T21:33:35+03:00 ERR (3): Undefined index: Email
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(23): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 23, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:33:35+03:00 ERR (3): Undefined index: Password
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(24): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 24, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:34:50+03:00 ERR (3): Undefined index: Email
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(23): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 23, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:34:50+03:00 ERR (3): Undefined index: Password
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(24): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 24, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:34:52+03:00 ERR (3): Undefined index: Email
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(23): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 23, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:34:52+03:00 ERR (3): Undefined index: Password
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(24): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 24, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:35:44+03:00 ERR (3): Undefined index: Email
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(23): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 23, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T21:35:44+03:00 ERR (3): Undefined index: Password
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\AuthenticationController.php(24): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined index...', 'C:\Users\George...', 24, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): AuthenticationController->loginAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('loginAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-06T22:31:12+03:00 ERR (3): array_key_exists() expects parameter 2 to be array, null given
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'array_key_exist...', 'C:\Users\George...', 40, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(40): array_key_exists('email', NULL)
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(20): Utility_Controller_AbstractController->_checkLoggedUser()
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->downloadAction()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('downloadAction')
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#9 {main}
+
+2014-09-06T22:32:50+03:00 ERR (3): Array to string conversion
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\index\download-list.phtml(3): Utility_Controller_ErrorController::phpErrorsAction(8, 'Array to string...', 'C:\Users\George...', 3, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php(108): include('C:\Users\George...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(888): Zend_View->_run('C:/Users/George...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('index/download-...')
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('index/download-...', NULL)
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('downloadListAct...')
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#13 {main}
+
+2014-09-06T22:32:50+03:00 ERR (3): Array to string conversion
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\index\download-list.phtml(3): Utility_Controller_ErrorController::phpErrorsAction(8, 'Array to string...', 'C:\Users\George...', 3, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php(108): include('C:\Users\George...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(888): Zend_View->_run('C:/Users/George...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('index/download-...')
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('index/download-...', NULL)
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php(277): Zend_Controller_Action_Helper_ViewRenderer->postDispatch()
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(527): Zend_Controller_Action_HelperBroker->notifyPostDispatch()
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('downloadListAct...')
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#13 {main}
+

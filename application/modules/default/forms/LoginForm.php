@@ -24,6 +24,18 @@ class Form_LoginForm extends Zend_Form
                 $emailElement, $passwordElement, $submitElement
             )
         );
+        
+        $this->setDecorators(
+            array(
+                array(
+                    'ViewScript',
+                    array(
+                        'viewScript' => '/forms/Decorators/loginForm.phtml',
+                        'class' => 'form'
+                    )
+                )
+            )
+        );
     }
     
     private function _getEmailElement()
@@ -34,15 +46,18 @@ class Form_LoginForm extends Zend_Form
         $emailElement->setLabel('Email')
                      ->setRequired(true)
                      ->addValidator($emailValidator);
-        
+
         return $emailElement;
     }
     
     private function _getPasswordElement()
     {
+        $credentialsVaidator = new Form_Validate_Credentials();
+        
         $passwordElement = new Zend_Form_Element_Password('password');
         $passwordElement->setRequired(true)
-                        ->setLabel('Password');
+                        ->setLabel('Password')
+                        ->addValidator($credentialsVaidator);
         
         return $passwordElement;
     }

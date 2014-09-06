@@ -5,3 +5,15 @@ html{font-family:sans-serif;-ms-text-size-adjust:100%;-webkit-text-size-adjust:1
 .navbar-center {
     margin-left: 200px;
 }
+.distance-separator {
+    height: 20px;
+}
+.login-div {
+    margin: auto;
+    padding-top: 100px;
+    width: 300px;
+}
+.login-user {
+    font-size: 90px;
+    text-align: center;
+}

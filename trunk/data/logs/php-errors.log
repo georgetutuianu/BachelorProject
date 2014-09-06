@@ -105,3 +105,177 @@
 [06-Sep-2014 21:01:08 UTC] PHP  10. Form_LoginForm->_getPasswordElement() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\forms\LoginForm.php:19
 [06-Sep-2014 21:01:08 UTC] PHP  11. Zend_Loader_Autoloader::autoload() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\forms\LoginForm.php:0
 [06-Sep-2014 21:01:08 UTC] PHP  12. Zend_Loader_Autoloader_Resource->autoload() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader\Autoloader.php:120
+[06-Sep-2014 21:32:03 UTC] PHP Fatal error:  Call to a member function getLabel() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\forms\Decorators\signupForm.phtml on line 17
+[06-Sep-2014 21:32:03 UTC] PHP Stack trace:
+[06-Sep-2014 21:32:03 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 21:32:03 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 21:32:03 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 21:32:03 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 21:32:03 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 21:32:03 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 21:32:03 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:527
+[06-Sep-2014 21:32:03 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php:277
+[06-Sep-2014 21:32:03 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:960
+[06-Sep-2014 21:32:03 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:921
+[06-Sep-2014 21:32:03 UTC] PHP  11. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:900
+[06-Sep-2014 21:32:03 UTC] PHP  12. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 21:32:03 UTC] PHP  13. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 21:32:03 UTC] PHP  14. Zend_Form->__toString() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:1
+[06-Sep-2014 21:32:03 UTC] PHP  15. Zend_Form->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:3015
+[06-Sep-2014 21:32:03 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:2999
+[06-Sep-2014 21:32:03 UTC] PHP  17. Zend_View->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 21:32:03 UTC] PHP  18. Zend_View_Abstract->__call() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 21:32:03 UTC] PHP  19. call_user_func_array() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 21:32:03 UTC] PHP  20. Zend_View_Helper_Partial->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 21:32:03 UTC] PHP  21. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Partial.php:109
+[06-Sep-2014 21:32:03 UTC] PHP  22. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 21:32:03 UTC] PHP  23. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 21:34:41 UTC] PHP Fatal error:  Call to a member function getLabel() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\forms\Decorators\signupForm.phtml on line 37
+[06-Sep-2014 21:34:41 UTC] PHP Stack trace:
+[06-Sep-2014 21:34:41 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 21:34:41 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 21:34:41 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 21:34:41 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 21:34:41 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 21:34:41 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 21:34:41 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:527
+[06-Sep-2014 21:34:41 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php:277
+[06-Sep-2014 21:34:41 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:960
+[06-Sep-2014 21:34:41 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:921
+[06-Sep-2014 21:34:41 UTC] PHP  11. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:900
+[06-Sep-2014 21:34:41 UTC] PHP  12. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 21:34:41 UTC] PHP  13. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 21:34:41 UTC] PHP  14. Zend_Form->__toString() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:1
+[06-Sep-2014 21:34:41 UTC] PHP  15. Zend_Form->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:3015
+[06-Sep-2014 21:34:41 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:2999
+[06-Sep-2014 21:34:41 UTC] PHP  17. Zend_View->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 21:34:41 UTC] PHP  18. Zend_View_Abstract->__call() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 21:34:41 UTC] PHP  19. call_user_func_array() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 21:34:41 UTC] PHP  20. Zend_View_Helper_Partial->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 21:34:41 UTC] PHP  21. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Partial.php:109
+[06-Sep-2014 21:34:41 UTC] PHP  22. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 21:34:41 UTC] PHP  23. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 22:04:16 UTC] PHP Fatal error:  Class 'Form_Validate_YoutubeLink' not found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\forms\DownloadForm.php on line 23
+[06-Sep-2014 22:04:16 UTC] PHP Stack trace:
+[06-Sep-2014 22:04:16 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:04:16 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:04:16 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:04:16 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:04:16 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:04:16 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 22:04:16 UTC] PHP   7. IndexController->downloadRequestAction() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:516
+[06-Sep-2014 22:04:16 UTC] PHP   8. Zend_Form->__construct() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php:24
+[06-Sep-2014 22:04:16 UTC] PHP   9. Form_DownloadForm->init() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:239
+[06-Sep-2014 22:04:16 UTC] PHP  10. Form_DownloadForm->_getDownloadLinkElement() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\forms\DownloadForm.php:15
+[06-Sep-2014 22:22:15 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\forms\Decorators\downloadForm.phtml on line 6
+[06-Sep-2014 22:22:15 UTC] PHP Stack trace:
+[06-Sep-2014 22:22:15 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:22:15 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:22:15 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:22:15 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:22:15 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:22:15 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 22:22:15 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:527
+[06-Sep-2014 22:22:15 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php:277
+[06-Sep-2014 22:22:15 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:960
+[06-Sep-2014 22:22:15 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:921
+[06-Sep-2014 22:22:15 UTC] PHP  11. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:900
+[06-Sep-2014 22:22:15 UTC] PHP  12. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 22:22:15 UTC] PHP  13. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 22:22:15 UTC] PHP  14. Zend_Form->__toString() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:1
+[06-Sep-2014 22:22:15 UTC] PHP  15. Zend_Form->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:3015
+[06-Sep-2014 22:22:15 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:2999
+[06-Sep-2014 22:22:15 UTC] PHP  17. Zend_View->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 22:22:15 UTC] PHP  18. Zend_View_Abstract->__call() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 22:22:15 UTC] PHP  19. call_user_func_array() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 22:22:15 UTC] PHP  20. Zend_View_Helper_Partial->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 22:22:15 UTC] PHP  21. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Partial.php:109
+[06-Sep-2014 22:22:15 UTC] PHP  22. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 22:22:15 UTC] PHP  23. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 22:22:28 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\scripts\forms\Decorators\downloadForm.phtml on line 7
+[06-Sep-2014 22:22:28 UTC] PHP Stack trace:
+[06-Sep-2014 22:22:28 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:22:28 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:22:28 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:22:28 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:22:28 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:22:28 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 22:22:28 UTC] PHP   7. Zend_Controller_Action_HelperBroker->notifyPostDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:527
+[06-Sep-2014 22:22:28 UTC] PHP   8. Zend_Controller_Action_Helper_ViewRenderer->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php:277
+[06-Sep-2014 22:22:28 UTC] PHP   9. Zend_Controller_Action_Helper_ViewRenderer->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:960
+[06-Sep-2014 22:22:28 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:921
+[06-Sep-2014 22:22:28 UTC] PHP  11. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:900
+[06-Sep-2014 22:22:28 UTC] PHP  12. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 22:22:28 UTC] PHP  13. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 22:22:28 UTC] PHP  14. Zend_Form->__toString() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:1
+[06-Sep-2014 22:22:28 UTC] PHP  15. Zend_Form->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:3015
+[06-Sep-2014 22:22:28 UTC] PHP  16. Zend_Form_Decorator_ViewScript->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form.php:2999
+[06-Sep-2014 22:22:28 UTC] PHP  17. Zend_View->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 22:22:28 UTC] PHP  18. Zend_View_Abstract->__call() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Form\Decorator\ViewScript.php:175
+[06-Sep-2014 22:22:28 UTC] PHP  19. call_user_func_array() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 22:22:28 UTC] PHP  20. Zend_View_Helper_Partial->partial() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:350
+[06-Sep-2014 22:22:29 UTC] PHP  21. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Helper\Partial.php:109
+[06-Sep-2014 22:22:29 UTC] PHP  22. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[06-Sep-2014 22:22:29 UTC] PHP  23. include() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View.php:108
+[06-Sep-2014 22:41:33 UTC] PHP Parse error:  syntax error, unexpected ')' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php on line 33
+[06-Sep-2014 22:41:33 UTC] PHP Stack trace:
+[06-Sep-2014 22:41:33 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:41:33 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:41:33 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:41:33 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:41:33 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:41:33 UTC] PHP   6. Zend_Controller_Dispatcher_Standard->loadClass() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:275
+[06-Sep-2014 22:58:18 UTC] PHP Fatal error:  Class 'Utility_View_Helper_DisplayFlashMessages' not found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php on line 33
+[06-Sep-2014 22:58:18 UTC] PHP Stack trace:
+[06-Sep-2014 22:58:18 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:58:18 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:58:18 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:58:18 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:58:18 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:58:18 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 22:58:18 UTC] PHP   7. IndexController->downloadRequestAction() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:516
+[06-Sep-2014 22:59:21 UTC] PHP Fatal error:  Call to a member function addMessage() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php on line 30
+[06-Sep-2014 22:59:21 UTC] PHP Stack trace:
+[06-Sep-2014 22:59:21 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 22:59:21 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 22:59:21 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 22:59:21 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 22:59:21 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 22:59:21 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 22:59:21 UTC] PHP   7. IndexController->downloadRequestAction() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:516
+[06-Sep-2014 23:03:38 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php on line 37
+[06-Sep-2014 23:03:38 UTC] PHP Stack trace:
+[06-Sep-2014 23:03:38 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 23:03:38 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 23:03:38 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 23:03:38 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 23:03:38 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 23:03:38 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 23:03:38 UTC] PHP   7. Utility_Controller_AbstractController->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:521
+[06-Sep-2014 23:04:13 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php on line 37
+[06-Sep-2014 23:04:13 UTC] PHP Stack trace:
+[06-Sep-2014 23:04:13 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 23:04:13 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 23:04:13 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 23:04:13 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 23:04:13 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 23:04:13 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 23:04:13 UTC] PHP   7. Utility_Controller_AbstractController->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:521
+[06-Sep-2014 23:04:14 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php on line 37
+[06-Sep-2014 23:04:14 UTC] PHP Stack trace:
+[06-Sep-2014 23:04:14 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 23:04:14 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 23:04:14 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 23:04:14 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 23:04:14 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 23:04:14 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 23:04:14 UTC] PHP   7. Utility_Controller_AbstractController->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:521
+[06-Sep-2014 23:04:15 UTC] PHP Fatal error:  Call to a member function getMessages() on a non-object in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php on line 37
+[06-Sep-2014 23:04:15 UTC] PHP Stack trace:
+[06-Sep-2014 23:04:15 UTC] PHP   1. {main}() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:0
+[06-Sep-2014 23:04:15 UTC] PHP   2. Zend_Application->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php:26
+[06-Sep-2014 23:04:15 UTC] PHP   3. Zend_Application_Bootstrap_Bootstrap->run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php:366
+[06-Sep-2014 23:04:15 UTC] PHP   4. Zend_Controller_Front->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php:101
+[06-Sep-2014 23:04:15 UTC] PHP   5. Zend_Controller_Dispatcher_Standard->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php:954
+[06-Sep-2014 23:04:15 UTC] PHP   6. Zend_Controller_Action->dispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php:308
+[06-Sep-2014 23:04:15 UTC] PHP   7. Utility_Controller_AbstractController->postDispatch() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php:521

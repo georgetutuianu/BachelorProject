@@ -16,13 +16,28 @@ class Form_DownloadForm extends Zend_Form
         $submitFormElement = $this->_getSubmitFormElement();
         
         $this->addElements(array($downloadLinkElement, $submitFormElement));
+        
+        $this->setDecorators(
+            array(
+                array(
+                    'ViewScript',
+                    array(
+                        'viewScript' => '/forms/Decorators/downloadForm.phtml',
+                        'class' => 'form'
+                    )
+                )
+            )
+        );
     }
     
     private function _getDownloadLinkElement()
     {
+        $downloadLinkValidator = new Form_Validate_YoutubeLink();
+        
         $downloadLinkElement = new Zend_Form_Element_Text('DownloadLink');
         $downloadLinkElement->setRequired()
-                            ->setLabel('Download link');
+                            ->setLabel('Youtube link')
+                            ->addValidator($downloadLinkValidator);
         
         return $downloadLinkElement;
     }

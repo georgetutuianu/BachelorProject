@@ -7,18 +7,12 @@
  */
 class AuthenticationController extends Utility_Controller_AbstractController
 {
-    public function loginFormAction()
-    {
-        $loginForm = new Form_LoginForm();
-        $this->view->loginForm = $loginForm;
-    }
-    
     public function loginAction()
     {
         $loginData = $this->getAllParams();
         
         $loginForm = new Form_LoginForm();
-        if ($loginForm->isValid($loginData)) {
+        if ($this->getRequest()->isPost() && $loginForm->isValid($loginData)) {
             $userModel = new Model_Users();
             $userEmail = $loginData['email'];
             $userPassword = $loginData['password'];
@@ -27,9 +21,7 @@ class AuthenticationController extends Utility_Controller_AbstractController
             }
         }
         
-        $this->_redirect('/default/authentication/login-form');
-        $this->_helper->viewRenderer->setNoRender(true);
-        $this->_helper->layout->disableLayout();
+        $this->view->loginForm = $loginForm;
     }
     
     public function signupFormAction()

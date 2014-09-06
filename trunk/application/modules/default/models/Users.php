@@ -52,4 +52,19 @@ class Model_Users
         $authController = Zend_Auth::getInstance();
         $authController->clearIdentity();
     }
+    
+    public function userIsValid($email, $password)
+    {
+        $selectQuery = $this->_dbAdapter->select();
+        $selectQuery->from(self::TABLE_NAME, array())
+                    ->where('email = ?', $email)
+                    ->where('password = ?', md5($password))
+                    ->columns(
+                        array(
+                            'email'
+                        )
+                    )
+                    ->limit(1);
+        return $this->_dbAdapter->fetchOne($selectQuery);
+    }
 }

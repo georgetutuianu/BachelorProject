@@ -1,0 +1,40 @@
+<div class="login-div">
+    <div class="login-user">
+        <span class="glyphicon glyphicon-user"></span>
+    </div>
+    <?php $formErrors = $this->element->getMessages(); ?>
+    <?php if (count($formErrors)) : ?>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-remove"></span>
+            The username and password you provided are invalid. Please try again!
+        </div>
+    <?php endif; ?>
+    <form action="<?php echo $this->element->getAction(); ?>" method="<?php echo $this->element->getMethod(); ?>">
+            <!-- email element -->
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" 
+                    placeholder="<?php echo $this->element->email->getLabel(); ?>"
+                    name="<?php echo $this->element->email->getName() ?>" 
+                    value="<?php echo $this->element->email->getValue() ?>"
+                >
+            </div>
+            <div class="distance-separator"></div>
+            <!-- password element -->
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                <input type="password" class="form-control"
+                    placeholder="<?php echo $this->element->password->getLabel(); ?>"
+                    name="<?php echo $this->element->password->getName(); ?>"
+                    value="<?php echo $this->element->password->getValue(); ?>"
+                >
+            </div>
+            <div class="distance-separator"></div>
+            <!-- Login element -->
+            <div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" 
+                    value="<?php echo $this->element->Login->getName(); ?>"
+                > 
+            </div>
+    </form>
+</div>

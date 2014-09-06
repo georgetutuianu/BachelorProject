@@ -1,0 +1,72 @@
+<div class="signup-div">
+    <div class="login-user">
+        <span class="glyphicon glyphicon-user"></span>
+    </div>
+    <?php $formErrors = $this->element->getMessages(); ?>
+    <?php if (count($formErrors)) : ?>
+        <div class="alert alert-danger" role="alert">
+            <span class="glyphicon glyphicon-remove"></span>
+            Some errors have appeared during registration. Please try again!
+        </div>
+    <?php endif; ?>
+    <form action="<?php echo $this->element->getAction(); ?>" method="<?php echo $this->element->getMethod(); ?>">
+            <!-- email element -->
+            <div class="input-group">
+                <span class="input-group-addon">@</span>
+                <input type="text" class="form-control" 
+                    placeholder="<?php echo $this->element->Email->getLabel(); ?>"
+                    name="<?php echo $this->element->Email->getName() ?>" 
+                    value="<?php echo $this->element->Email->getValue() ?>"
+                >
+            </div>
+            <?php if (count($this->element->Email->getMessages())) : ?>
+                <?php $errorMessage = $this->element->Email->getMessages(); ?>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    <?php echo reset($errorMessage); ?>
+                </div>
+            <?php endif; ?>
+            
+            <div class="distance-separator"></div>
+            <!-- password element -->
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                <input type="password" class="form-control"
+                    placeholder="<?php echo $this->element->Password->getLabel(); ?>"
+                    name="<?php echo $this->element->Password->getName(); ?>"
+                    value="<?php echo $this->element->Password->getValue(); ?>"
+                >
+            </div>
+            <?php if (count($this->element->Password->getMessages())) : ?>
+                <?php $errorMessage = $this->element->Password->getMessages(); ?>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    <?php echo reset($errorMessage); ?>
+                </div>
+            <?php endif; ?>
+            <div class="distance-separator"></div>
+            <!-- password element -->
+            <div class="input-group">
+                <span class="input-group-addon glyphicon glyphicon-lock"></span>
+                <input type="password" class="form-control"
+                    placeholder="<?php echo $this->element->PasswordConfirm->getLabel(); ?>"
+                    name="<?php echo $this->element->PasswordConfirm->getName(); ?>"
+                    value="<?php echo $this->element->PasswordConfirm->getValue(); ?>"
+                >
+            </div>
+            <?php if (count($this->element->PasswordConfirm->getMessages())) : ?>
+                <?php $errorMessage = $this->element->PasswordConfirm->getMessages(); ?>
+                <div class="alert alert-danger" role="alert">
+                    <span class="glyphicon glyphicon-remove"></span>
+                    <?php echo reset($errorMessage); ?>
+                </div>
+            <?php endif; ?>
+            <div class="distance-separator"></div>
+            <!-- Signup element -->
+            <div>
+                <input class="btn btn-lg btn-primary btn-block" type="submit" 
+                    value="<?php echo $this->element->Signup->getName(); ?>"
+                > 
+            </div>
+    </form>
+</div>

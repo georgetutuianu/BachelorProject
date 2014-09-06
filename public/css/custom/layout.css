@@ -16,3 +16,16 @@
     font-size: 90px;
     text-align: center;
 }
+.signup-div {
+    margin: auto;
+    width: 300px;
+}
+.download-page {
+    padding-top: 150px;
+    margin: auto;
+    width: 500px;
+}
+.flash-message {
+    width: 97%;
+    margin: auto;
+}

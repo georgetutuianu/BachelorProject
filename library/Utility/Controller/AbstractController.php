@@ -15,6 +15,13 @@ class Utility_Controller_AbstractController extends Zend_Controller_Action
      */
     private $_pageTitle = null;
 
+    protected $_flashMessenger = null;
+    
+    public function init()
+    {
+        $this->_flashMessenger = $this->_helper->getHelper('FlashMessenger');
+    }
+    
     /**
      * Post dispatch routine. Executes after the action has been finished
      */
@@ -27,9 +34,22 @@ class Utility_Controller_AbstractController extends Zend_Controller_Action
         $user = $authController->getIdentity();
         $this->view->userEmail = $user['email'];
         
+        $flashMessageData = $this->_flashMessenger->getMessages();
+        if (!empty($flashMessageData)) {
+            list($flashMessage, $flashMessageType) = $flashMessageData;
+            $this->_helper->layout()->flashMessage = $flashMessage;
+            $this->_helper->layout()->flashMessageType = $flashMessageType;
+        }
+        
         $this->view->bundleLink()
                    ->appendStylesheet('/css/libraries/bootstrap.min.css')
                    ->appendStylesheet('/css/custom/layout.css');
+    }
+    
+    protected function _addFlashMessage($message, $type)
+    {
+        $this->_flashMessenger->addMessage($message);
+        $this->_flashMessenger->addMessage($type);
     }
     
     protected function _checkLoggedUser()

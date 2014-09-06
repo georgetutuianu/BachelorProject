@@ -17,22 +17,22 @@ class AuthenticationController extends Utility_Controller_AbstractController
             $userEmail = $loginData['email'];
             $userPassword = $loginData['password'];
             if ($userModel->login($userEmail, $userPassword)) {
-                $this->_redirect('/');
+                $this->_addFlashMessage(
+                    'You have been succesfully logged in!',
+                    BundlePhu_View_Helper_DisplayFlashMessages::SUCCESS_MESSAGE
+                );
+                
+                $this->_redirect('/default/index/download-request');
             }
         }
         
         $this->view->loginForm = $loginForm;
     }
     
-    public function signupFormAction()
-    {
-        $signupForm = new Form_SignupForm();
-        
-        $this->view->signupForm = $signupForm;
-    }
-    
     public function signoutAction()
     {
+        $this->_checkLoggedUser();
+        
         $userModel = new Model_Users();
         $userModel->signoutUser();
         
@@ -43,25 +43,29 @@ class AuthenticationController extends Utility_Controller_AbstractController
     
     public function signupAction()
     {
-        $this->_checkLoggedUser();
-        
         $signupData = $this->getAllParams();
         
-        $sigupForm = new Form_SignupForm();
-        if ($sigupForm->isValid($signupData)) {
+        $signupForm = new Form_SignupForm();
+        if ($this->getRequest()->isPost() && $signupForm->isValid($signupData)) {
             $usersModel = new Model_Users();
             
             $userEmail = $signupData['Email'];
             $userPassword = $signupData['Password'];
             try {
                 $usersModel->addUser($userEmail, $userPassword);
+                $this->_addFlashMessage(
+                    'The user have been successfully added. You can nou login!',
+                    BundlePhu_View_Helper_DisplayFlashMessages::SUCCESS_MESSAGE
+                );
+                $this->_redirect('/default/authentication/login');
             } catch (Exception $exception) {
-                
+                $this->_addFlashMessage(
+                    'An error occurred. Please try again!',
+                    BundlePhu_View_Helper_DisplayFlashMessages::ERROR_MESSAGE
+                );
             }
-            
         }
-        $this->_redirect('/default/authentication/login-form');
-        $this->_helper->viewRenderer->setNoRender(true);
-        $this->_helper->layout->disableLayout();
+        
+        $this->view->signupForm = $signupForm;
     }
 }

@@ -26,6 +26,17 @@ class Model_Users
         );
     }
 
+    public function emailExists($email)
+    {
+        $selectQuery = $this->_dbAdapter->select();
+        $selectQuery->from(self::TABLE_NAME, array())
+                    ->where('email = ?', $email)
+                    ->columns(array('email'))
+                    ->limit(1);
+        
+        return $this->_dbAdapter->fetchOne($selectQuery);
+    }
+    
     public function login($userEmail, $userPassword)
     {
         $authAdapter = new Zend_Auth_Adapter_DbTable();

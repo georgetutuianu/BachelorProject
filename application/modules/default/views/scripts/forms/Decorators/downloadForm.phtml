@@ -1,0 +1,30 @@
+<div class="download-page">
+    <form action="<?php echo $this->element->getAction() ?>"
+          method="<?php echo $this->element->getMethod() ?>"
+    >
+        
+        <?php if (count($this->element->DownloadLink->getMessages())) : ?>
+            <?php $errorMessage = $this->element->DownloadLink->getMessages(); ?>
+            <div class="alert alert-danger" role="alert">
+                <span class="glyphicon glyphicon-remove"></span>
+                <?php echo reset($errorMessage); ?>
+            </div>
+        <?php endif; ?>
+        
+        <div class="input-group">
+            <input type="text" class="form-control" 
+                   placeholder="<?php echo $this->element->DownloadLink->getLabel(); ?>"
+                   name="<?php echo $this->element->DownloadLink->getName(); ?>"
+                   value="<?php echo $this->element->DownloadLink->getValue(); ?>"
+            >
+
+            <span class="input-group-btn">
+                <button class="btn btn-info" type="button" onclick="submit();">
+                    <?php echo $this->element->Download->getName(); ?>
+                </button>
+            </span>
+            <!--<span class="input-group-addon"><input></span>-->
+        </div>
+        
+    </form>
+</div>

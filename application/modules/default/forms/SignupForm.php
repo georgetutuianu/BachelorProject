@@ -20,31 +20,55 @@ class Form_SignupForm extends Zend_Form
         $this->addElements(
             array($emailElement, $passwordElement, $confirmPasswordElement, $submitElement)
         );
+        
+        $this->setDecorators(
+            array(
+                array(
+                    'ViewScript',
+                    array(
+                        'viewScript' => '/forms/Decorators/signupForm.phtml',
+                        'class' => 'form'
+                    )
+                )
+            )
+        );
     }
     
     private function _getConfirmPasswordElement()
     {
-        $confirmPasswordElement = new Zend_Form_Element_Password('Confirm Password');
+        $passwordMatchValidator = new Form_Validate_PasswordMatch();
+        
+        $confirmPasswordElement = new Zend_Form_Element_Password('Password Confirm');
         $confirmPasswordElement->setRequired()
-                        ->setLabel('Confirm password');
+                               ->setLabel('Confirm password')
+                               ->addValidator($passwordMatchValidator);
         
         return $confirmPasswordElement;
     }
     
     private function _getEmailElement()
     {
+        $emailValidator = new Zend_Validate_EmailAddress();
+        $emailNotExistsValidator = new Form_Validate_EmailNotTaken();
+        
         $emailElement = new Zend_Form_Element_Text('Email');
         $emailElement->setRequired()
-                     ->setLabel('Email');
+                     ->setLabel('Email')
+                     ->addValidator($emailValidator)
+                     ->addValidator($emailNotExistsValidator);
         
         return $emailElement;
     }
     
     private function _getPasswordElement()
     {
+        $passwordLengthValidator = new Zend_Validate_StringLength();
+        $passwordLengthValidator->setMin(4)->setMax(20);
+        
         $passwordElement = new Zend_Form_Element_Password('Password');
         $passwordElement->setRequired()
-                        ->setLabel('Password');
+                        ->setLabel('Password')
+                        ->addValidator($passwordLengthValidator);
         
         return $passwordElement;
     }

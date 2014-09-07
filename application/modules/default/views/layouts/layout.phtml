@@ -41,5 +41,12 @@
         <?php echo $this->layout()->content ?>
 
         <?php echo $this->bundleScript() ?>
+        
+        <div class="navbar navbar-fixed-bottom">
+            <div class="sticky-note">
+                <span class="glyphicon glyphicon-cloud"></span>
+                <?php echo gethostname(); ?>
+            </div>
+        </div>
     </body>
 </html>

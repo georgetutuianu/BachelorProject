@@ -29,3 +29,32 @@
     width: 97%;
     margin: auto;
 }
+.download-list {
+    width: 50%;
+    margin: auto;
+}
+.status-td {
+    width: 100px;
+}
+.download-button {
+    width: 100px;
+    text-align: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+.sticky-note {
+    position: relative;
+    left: -25px;
+    bottom: -25px;
+    width: 250px;
+    height: 70px;
+    background-color: #31b0d5;
+    border-radius: 20px;
+    font-family: "Comic Sans MS";
+    font-size: 20px;
+    color: #ffffff;
+}
+.sticky-note > span {
+    padding-top: 15px;
+    padding-left: 30px;
+}

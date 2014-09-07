@@ -1,5 +1,69 @@
-<ul>
-    <?php foreach ($this->downloadLinkList as $downloadLinkDetails) : ?>
-        <li><?php echo $downloadLinkDetails['video_link']; ?></li>
-    <?php endforeach; ?>
-</ul>
+<div class="download-list"> 
+    <div class="panel panel-info">
+        <div class="panel-heading">
+            <h3 class="panel-title">Download list</h3>
+        </div>
+        <table class="table">
+            <?php foreach ($this->downloadLinkList as $downloadLinkDetails) : ?>
+                <tr>
+                    <td>
+                        <a href="<?php echo $downloadLinkDetails['video_link']; ?>" target="_blank">
+                            <?php echo $downloadLinkDetails['video_name'] 
+                                    ? $downloadLinkDetails['video_name'] 
+                                    : 'Link' ?>
+                        </a>
+                    </td>
+                    <td class="status-td">
+                        <?php switch ($downloadLinkDetails['download_status']) : 
+                            case Service_Multimedia::DOWNLOAD_STATUS_WAITING: ?>
+                                <div class="progress"><div class="progress-bar progress-bar-warning"  
+                                     role="progressbar" aria-valuenow="100" aria-valuemin="0" 
+                                     aria-valuemax="100" style="width: 100%"
+                                     title="Waiting..."
+                                >
+                                    <span class="sr-only">Waiting...</span>
+                                </div></div>
+                            <?php break;
+                            case Service_Multimedia::DOWNLOAD_STATUS_IN_PROGRESS: ?>
+                                <div class="progress">
+                                    <div class="progress-bar progress-bar-info"  
+                                         role="progressbar" aria-valuenow="100" aria-valuemin="0" 
+                                         aria-valuemax="100" style="width: 100%"
+                                         title="Download in progress"
+                                    >
+                                        <span class="sr-only">Download in progress</span>
+                                    </div></div>
+                            <?php break;
+                            case Service_Multimedia::DOWNLOAD_STATUS_FAILED: ?>
+                                <form method="POST" action="/default/index/download-request"
+                                      style="text-align: center;"
+                                >
+                                    <input type="hidden" 
+                                           value="<?php echo $downloadLinkDetails['video_link']; ?>" 
+                                           name="DownloadLink">
+                                    <input type="hidden" name="entryId" 
+                                           value="<?php echo $downloadLinkDetails['id'] ?>" >
+                                    <button title="Retry" onclick="submit();">
+                                        <span class="glyphicon glyphicon-retweet"></span>
+                                    </button>
+                                </form>
+                            <?php break;
+                            case Service_Multimedia::DOWNLOAD_STATUS_SUCCESS: ?>
+                                <div class="download-button">
+                                    <a href="<?php echo $downloadLinkDetails['download_link'] ?>">
+                                        <span class="glyphicon glyphicon-download-alt">
+                                        </span>
+                                    </a>
+                                </div>
+                            <?php break;
+                        endswitch; ?>
+                    </td>
+                </tr>
+            <?php endforeach; ?>
+        </table>
+        
+<!--        <div class="panel-body">
+            Panel content
+        </div>-->
+    </div>
+</div>

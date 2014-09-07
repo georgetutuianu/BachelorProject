@@ -293,3 +293,276 @@
 [07-Sep-2014 16:10:45 UTC] PHP  10. Zend_Controller_Action_Helper_ViewRenderer->renderScript() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:921
 [07-Sep-2014 16:10:45 UTC] PHP  11. Zend_View_Abstract->render() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php:900
 [07-Sep-2014 16:10:45 UTC] PHP  12. Zend_View->_run() C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php:888
+[07-Sep-2014 22:45:23 Asia/Muscat] PHP Fatal error:  CLI-CALL : Section 'cli' cannot be found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/configs/config.ini 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\CliBootstrap.php(46): Zend_Config_Ini->__construct('C:\Users\George...', 'cli')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(681): CliBootstrap->_initConfigs()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(634): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('configs')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(598): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(355): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap(NULL)
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\applicati in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 22:45:26 Asia/Muscat] PHP Fatal error:  CLI-CALL : Section 'cli' cannot be found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/configs/config.ini 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\CliBootstrap.php(46): Zend_Config_Ini->__construct('C:\Users\George...', 'cli')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(681): CliBootstrap->_initConfigs()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(634): Zend_Application_Bootstrap_BootstrapAbstract->_executeResource('configs')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\BootstrapAbstract.php(598): Zend_Application_Bootstrap_BootstrapAbstract->_bootstrap(NULL)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(355): Zend_Application_Bootstrap_BootstrapAbstract->bootstrap(NULL)
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\applicati in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 22:45:54 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:46:56 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:47:29 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:47:32 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:47:36 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:49:36 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:50:59 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Inva...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Inva...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:52:50 Asia/Muscat] PHP Fatal error:  Method BundlePhu_View_Helper_BundleLink::__toString() must not throw an exception in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml on line 0
+[07-Sep-2014 22:53:53 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Plug...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Plug...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:54:46 Asia/Muscat] PHP Fatal error:  Uncaught exception 'Zend_Exception' with message 'No entry is registered for key 'errorLog'' in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php:147
+Stack trace:
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Service\Log.php(37): Zend_Registry::get('errorLog')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\ErrorController.php(21): Utility_Service_Log::log(Object(ErrorException))
+#2 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(256, 'CLI-CALL : Plug...', 'C:\Users\George...', 35, Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(35): trigger_error('CLI-CALL : Plug...', 256)
+#4 {main}
+  thrown in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Registry.php on line 147
+[07-Sep-2014 22:57:08 Asia/Muscat] PHP Catchable fatal error:  Method Zend_Controller_Response_Cli::__toString() must return a string value in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\Plugin\CliInitializer.php on line 58
+[07-Sep-2014 22:57:28 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 22:57:34 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 22:59:56 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:00:44 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:01:23 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:01:47 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:01:52 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:07:06 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:07:50 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:07:54 Asia/Muscat] PHP Fatal error:  CLI-CALL : Invalid controller specified (error)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php(27): Zend_Application->run()
+#4 {main} 
+#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(965): Zend_Controller_Plugin_Broker->postDispatch(Object(Zend_Controller_Request_Simple))
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#2 C:\Users\George\SkyDri in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:10:08 Asia/Muscat] PHP Fatal error:  Class 'Utility_Controller_CliGeneric' not found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\controllers\ErrorController.php on line 12
+[07-Sep-2014 23:11:47 Asia/Muscat] PHP Fatal error:  CLI-CALL : No entry is registered for key 'config'#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\CliGeneric.php(26): Zend_Registry::get('config')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(133): Utility_Controller_CliGeneric->init()
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(281): Zend_Controller_Action->__construct(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli), Array)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Simple), Object(Zend_Controller_Response_Cli))
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:12:35 Asia/Muscat] PHP Warning:  include_once(Service\Log.php): failed to open stream: No such file or directory in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php on line 134
+[07-Sep-2014 23:12:35 Asia/Muscat] PHP Warning:  include_once(): Failed opening 'Service\Log.php' for inclusion (include_path='C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/../library;C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library;.;C:\php\pear') in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Loader.php on line 134
+[07-Sep-2014 23:12:35 Asia/Muscat] PHP Fatal error:  Class 'Service_Log' not found in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\controllers\ErrorController.php on line 26
+[07-Sep-2014 23:13:11 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:13:16 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:13:51 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:13:55 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:15:13 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:15:17 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:15:48 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:15:53 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:16:16 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Utility\Controller\AbstractController.php(44): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\A in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:16:41 Asia/Muscat] PHP Fatal error:  CLI-CALL : script 'error/error.phtml' not found in path (C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application/modules/default/views/layouts/;C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\scripts/)#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(884): Zend_View_Abstract->_script('error/error.pht...')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(900): Zend_View_Abstract->render('error/error.pht...')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(921): Zend_Controller_Action_Helper_ViewRenderer->renderScript('error/error.pht...', NULL)
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\Helper\ViewRenderer.php(960): Zend_Controller_Action_Helper_ViewRenderer->render()
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action\HelperBroker.php(2 in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35
+[07-Sep-2014 23:17:29 Asia/Muscat] PHP Fatal error:  CLI-CALL : Plugin by name 'BundleLink' was not found in the registry; used paths:
+Cli_View_Helper_: C:/Users/George/SkyDrive/Proiecte/Licenta/Aplicatie/application/modules/cli/views\helpers/
+: /
+Zend_View_Helper_: Zend/View/Helper/#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(1182): Zend_Loader_PluginLoader->load('BundleLink')
+#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(618): Zend_View_Abstract->_getPlugin('helper', 'bundleLink')
+#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View\Abstract.php(344): Zend_View_Abstract->getHelper('bundleLink')
+#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(8): Zend_View_Abstract->__call('bundleLink', Array)
+#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\views\layouts\layout.phtml(8): Zend_View->bundleLink()
+#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\View in C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\cli\climain.php on line 35

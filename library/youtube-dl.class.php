@@ -243,7 +243,8 @@ class yt_downloader implements cnfg
                 $res = $vids[$c]["type"];
                 $ext = $vids[$c]["ext"];
 
-                $videoTitle    = $title . "_-_" . $res ."_-_youtubeid-$id";
+                $videoTitle = $title;
+//                $videoTitle    = $title . "_-_" . $res ."_-_youtubeid-$id";
                 $videoFilename = "$videoTitle.$ext";
                 $thumbFilename = "$videoTitle.jpg";
                 $video         = $path . $videoFilename;
@@ -802,10 +803,9 @@ class yt_downloader implements cnfg
     public function get_video_title() {
         return $this->videoTitle; }
     public function set_video_title($str) {
-        if(is_string($str)) {
+        if(is_string($str) && !$this->videoTitle) {
             $this->videoTitle = $str;
-        } else {
-            throw new Exception("Invalid title given: $str"); }
+        }
     }
 
     // Getter and Setter for thumbnail preferences.

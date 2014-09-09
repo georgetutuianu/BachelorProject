@@ -384,3 +384,171 @@
 	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
 	#17 {main}
 
+2014-09-09T21:34:49+03:00 ERR (3): fwrite(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fwrite(): SSL: ...', 'C:\Users\George...', 202, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(202): fwrite(Resource id 	#173, '???b??/???@	#H??...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(980): HTTP_Request2_SocketWrapper->write('???b??/???@	#H??...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(143): HTTP_Request2_Adapter_Socket->writeBody()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'audios/testblob', 201, 'ID3??????TXXX?...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(34): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('audios', 'testblob', 'ID3??????TXXX?...')
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T21:37:08+03:00 ERR (3): fwrite(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fwrite(): SSL: ...', 'C:\Users\George...', 202, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(202): fwrite(Resource id 	#173, '8?qas??a%`?4? ?...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(980): HTTP_Request2_SocketWrapper->write('8?qas??a%`?4? ?...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(143): HTTP_Request2_Adapter_Socket->writeBody()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'audios/testblob', 201, 'ID3??????TXXX?...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(37): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('audios', 'testblob', 'ID3??????TXXX?...', Object(WindowsAzure\Blob\Models\CreateBlobOptions))
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T21:44:12+03:00 ERR (3): fwrite(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fwrite(): SSL: ...', 'C:\Users\George...', 202, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(202): fwrite(Resource id 	#173, '?{?NF???%4a?Q??...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(980): HTTP_Request2_SocketWrapper->write('?{?NF???%4a?Q??...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(143): HTTP_Request2_Adapter_Socket->writeBody()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'audios/testblob', 201, 'ID3??????TXXX?...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(37): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('audios', 'testblob', 'ID3??????TXXX?...', Object(WindowsAzure\Blob\Models\CreateBlobOptions))
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T21:50:05+03:00 ERR (3): fgets(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fgets(): SSL: A...', 'C:\Users\George...', 163, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(163): fgets(Resource id 	#173, 16384)
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(1012): HTTP_Request2_SocketWrapper->readLine(16384, NULL)
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(144): HTTP_Request2_Adapter_Socket->readResponse()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'audios/testblob', 201, 'ID3??????/TXXX?...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(37): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('audios', 'testblob', Resource id 	#162)
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T21:53:22+03:00 ERR (3): fwrite(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fwrite(): SSL: ...', 'C:\Users\George...', 202, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(202): fwrite(Resource id 	#173, 'nL91eZcf18sccf/...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(980): HTTP_Request2_SocketWrapper->write('nL91eZcf18sccf/...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(143): HTTP_Request2_Adapter_Socket->writeBody()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'audios/testblob', 201, 'SUQzAwAAAAAKL1R...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(37): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('audios', 'testblob', 'SUQzAwAAAAAKL1R...')
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T21:59:59+03:00 ERR (3): Undefined property: IndexController::$blobRestProxy
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(41): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined prope...', 'C:\Users\George...', 41, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-09T22:00:50+03:00 ERR (3): Undefined property: IndexController::$blobRestProxy
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(41): Utility_Controller_ErrorController::phpErrorsAction(8, 'Undefined prope...', 'C:\Users\George...', 41, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-09T22:10:26+03:00 ERR (3): Object of class WindowsAzure\Blob\Models\GetContainerPropertiesResult could not be converted to string
+	#0 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(19): Utility_Controller_ErrorController::phpErrorsAction(4096, 'Object of class...', 'C:\Users\George...', 19, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#7 {main}
+
+2014-09-09T22:17:24+03:00 ERR (3): fgets(): SSL: An existing connection was forcibly closed by the remote host.
+
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'fgets(): SSL: A...', 'C:\Users\George...', 163, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\SocketWrapper.php(163): fgets(Resource id 	#173, 16384)
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(1012): HTTP_Request2_SocketWrapper->readLine(16384, NULL)
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2\Adapter\Socket.php(144): HTTP_Request2_Adapter_Socket->readResponse()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\HTTP\Request2.php(939): HTTP_Request2_Adapter_Socket->sendRequest(Object(HTTP_Request2))
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\Http\HttpClient.php(262): HTTP_Request2->send()
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\RestProxy.php(141): WindowsAzure\Common\Internal\Http\HttpClient->send(Array, Object(WindowsAzure\Common\Internal\Http\Url))
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(86): WindowsAzure\Common\Internal\RestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Common\Internal\ServiceRestProxy.php(125): WindowsAzure\Common\Internal\ServiceRestProxy->sendContext(Object(WindowsAzure\Common\Internal\Http\HttpCallContext))
+	#9 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\WindowsAzure\Blob\BlobRestProxy.php(1298): WindowsAzure\Common\Internal\ServiceRestProxy->send('PUT', Array, Array, Array, 'uploads/melodie...', 201, 'ID3??????/TXXX?...')
+	#10 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(43): WindowsAzure\Blob\BlobRestProxy->createBlockBlob('uploads', 'melodie.mp3', Resource id 	#162, Object(WindowsAzure\Blob\Models\CreateBlobOptions))
+	#11 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#12 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#13 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#14 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#15 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#16 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#17 {main}
+
+2014-09-09T22:47:22+03:00 ERR (3): unlink(ee54e0dad89dfa5d8816a48e9e0d9cca.mp3): No such file or directory
+	#0 [internal function]: Utility_Controller_ErrorController::phpErrorsAction(2, 'unlink(ee54e0da...', 'C:\Users\George...', 62, Array)
+	#1 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\services\Multimedia.php(62): unlink('ee54e0dad89dfa5...')
+	#2 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\application\modules\default\controllers\IndexController.php(18): Service_Multimedia->collectGarbage('ee54e0dad89dfa5...')
+	#3 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Action.php(516): IndexController->azureAction()
+	#4 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Dispatcher\Standard.php(308): Zend_Controller_Action->dispatch('azureAction')
+	#5 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Controller\Front.php(954): Zend_Controller_Dispatcher_Standard->dispatch(Object(Zend_Controller_Request_Http), Object(Zend_Controller_Response_Http))
+	#6 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application\Bootstrap\Bootstrap.php(101): Zend_Controller_Front->dispatch()
+	#7 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\library\Zend\Application.php(366): Zend_Application_Bootstrap_Bootstrap->run()
+	#8 C:\Users\George\SkyDrive\Proiecte\Licenta\Aplicatie\public\index.php(26): Zend_Application->run()
+	#9 {main}
+

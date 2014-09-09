@@ -49,7 +49,22 @@ class Service_Multimedia
         );
     }
     
-    public function downloadVideo($videoLink)
+    public function collectGarbage($cronId)
+    {
+        $downloadPath = realpath(sprintf(
+            '%s/../data/downloads/', APPLICATION_PATH
+        ));
+        
+        $dirFiles = scandir($downloadPath);
+        
+        foreach ($dirFiles as $filePath) {
+            if (strpos($filePath, $cronId) === 0) {
+                unlink(realpath($downloadPath . '/' . $filePath));
+            }
+        }
+    }
+    
+    public function downloadVideo($videoLink, $fileName)
     {
         require 'youtube-dl.class.php';
         
@@ -64,6 +79,7 @@ class Service_Multimedia
         $youtubeDownloader->set_downloads_dir($downloadDir . '/');
         $youtubeDownloader->set_ffmpegLogs_dir($ffmpegLogsDir . '/');
         $youtubeDownloader->set_download_thumbnail(false);
+        $youtubeDownloader->set_video_title($fileName);
         
         $youtubeDownloader->download_audio();
         $audioFileName = $youtubeDownloader->get_video_title();
@@ -129,6 +145,17 @@ class Service_Multimedia
         
         return $this->_dbAdapter->fetchRow($selectQuery);
     }
+    
+    public function markAsFailed($videoId)
+    {
+        return $this->_dbAdapter->update(
+            self::TABLE_NAME,
+            array(
+                'download_status' => self::DOWNLOAD_STATUS_FAILED
+            ),
+            $this->_dbAdapter->quoteInto('id = ?', $videoId)
+        );
+    }
 
     public function markAsInProgress($videoId)
     {
@@ -141,10 +168,21 @@ class Service_Multimedia
         );
     }
 
-    public function storeBlobInAzure($filePath, $fileName)
+    public function setBlobName($fileName, $requestId)
     {
-        require 'WindowsAzure\WindowsAzure.php';
-        $connectionString = 'DefaultEndpointsProtocol=https;AccountName=licenta;AccountKey=kIldSIWX1maxG1xj+yw+SgBk+9DN6/oexbu+PwiwINIX6eySp4GMVXPrYDSDWon2mAdluWEThF/rmvMwKKuA4g==';
+        return $this->_dbAdapter->update(
+            self::TABLE_NAME, 
+            array(
+                'download_status' => self::DOWNLOAD_STATUS_SUCCESS,
+                'download_link' => $fileName
+            ),
+            $this->_dbAdapter->quoteInto('id = ?', $requestId)
+        );
+    }
+    
+    public function storeBlobInAzure($filePath, $blobName)
+    {
+        $connectionString = 'DefaultEndpointsProtocol=http;AccountName=licenta;AccountKey=kIldSIWX1maxG1xj+yw+SgBk+9DN6/oexbu+PwiwINIX6eySp4GMVXPrYDSDWon2mAdluWEThF/rmvMwKKuA4g==';
         $blobRestProxy = WindowsAzure\Common\ServicesBuilder::getInstance()->createBlobService($connectionString);
         
         $createContainerOptions = new WindowsAzure\Blob\Models\CreateContainerOptions(); 
@@ -155,12 +193,10 @@ class Service_Multimedia
         try {
             $fileContent = fopen($filePath, 'r');
             
-            $blobRestProxy->createBlobBlock(
-                'audios',
-                $fileName,
-                $fileName,
-                $fileContent
-            );
+            $storingOptions = new \WindowsAzure\Blob\Models\CreateBlobOptions();
+            $storingOptions->setContentType('audio/mpeg');
+            
+            $blobRestProxy->createBlockBlob('uploads', $blobName, $fileContent, $storingOptions);
         } catch (Exception $e) {
             $code = $e->getCode();
             $error_message = $e->getMessage();

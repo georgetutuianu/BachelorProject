@@ -8,7 +8,22 @@
 class Cli_MultimediaController extends Utility_Controller_CliGeneric
 {
     public function downloadVideoAction()
-    {
-        echo 'x';
+    { 
+        require 'WindowsAzure/WindowsAzure.php';
+        $multimediaService = new Service_Multimedia();
+        
+        $videoToConvert = $multimediaService->getVideoToConvert();
+//        $multimediaService->markAsInProgress($videoToConvert['id']);
+        
+        try {
+            $audioFileName = $multimediaService->downloadVideo($videoToConvert);
+            $filePath = realpath(sprintf(
+                '%s/../data/downloads/%s', APPLICATION_PATH, $audioFileName
+            ));
+            
+            $multimediaService->storeBlobInAzure($filePath, $audioFileName);
+        } catch (Exception $exception) {
+            echo $exception->getMessage();
+        }
     }
 }

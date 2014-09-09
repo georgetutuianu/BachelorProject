@@ -49,6 +49,28 @@ class Service_Multimedia
         );
     }
     
+    public function downloadVideo($videoLink)
+    {
+        require 'youtube-dl.class.php';
+        
+        $downloadDir = realpath(sprintf(
+            '%s/../data/downloads/', APPLICATION_PATH
+        ));
+        $ffmpegLogsDir = realpath(sprintf(
+            '%s/../data/logs/', APPLICATION_PATH
+        ));
+        
+        $youtubeDownloader = new yt_downloader($videoLink['video_link']);
+        $youtubeDownloader->set_downloads_dir($downloadDir . '/');
+        $youtubeDownloader->set_ffmpegLogs_dir($ffmpegLogsDir . '/');
+        $youtubeDownloader->set_download_thumbnail(false);
+        
+        $youtubeDownloader->download_audio();
+        $audioFileName = $youtubeDownloader->get_video_title();
+       
+        return sprintf('%s.mp3', $audioFileName);
+    }
+    
     public function getDownloadListDetails()
     {
         $authController = Zend_Auth::getInstance();
@@ -90,7 +112,62 @@ class Service_Multimedia
         
         return $this->_dbAdapter->fetchAll($selectQuery);
     }
+    
+    public function getVideoToConvert()
+    {
+        $selectQuery = $this->_dbAdapter->select();
+        $selectQuery->from(self::TABLE_NAME, array())
+                    ->where("download_status = '?'", self::DOWNLOAD_STATUS_WAITING)
+                    ->columns(
+                        array(
+                            'id' => 'id',
+                            'video_link' => 'link'
+                        )
+                    )
+                    ->order('added DESC')
+                    ->limit(1);
+        
+        return $this->_dbAdapter->fetchRow($selectQuery);
+    }
 
+    public function markAsInProgress($videoId)
+    {
+        return $this->_dbAdapter->update(
+            self::TABLE_NAME,
+            array(
+                'download_status' => self::DOWNLOAD_STATUS_IN_PROGRESS
+            ),
+            $this->_dbAdapter->quoteInto('id = ?', $videoId)
+        );
+    }
+
+    public function storeBlobInAzure($filePath, $fileName)
+    {
+        require 'WindowsAzure\WindowsAzure.php';
+        $connectionString = 'DefaultEndpointsProtocol=https;AccountName=licenta;AccountKey=kIldSIWX1maxG1xj+yw+SgBk+9DN6/oexbu+PwiwINIX6eySp4GMVXPrYDSDWon2mAdluWEThF/rmvMwKKuA4g==';
+        $blobRestProxy = WindowsAzure\Common\ServicesBuilder::getInstance()->createBlobService($connectionString);
+        
+        $createContainerOptions = new WindowsAzure\Blob\Models\CreateContainerOptions(); 
+        $createContainerOptions->setPublicAccess(
+            WindowsAzure\Blob\Models\PublicAccessType::CONTAINER_AND_BLOBS
+        );
+        
+        try {
+            $fileContent = fopen($filePath, 'r');
+            
+            $blobRestProxy->createBlobBlock(
+                'audios',
+                $fileName,
+                $fileName,
+                $fileContent
+            );
+        } catch (Exception $e) {
+            $code = $e->getCode();
+            $error_message = $e->getMessage();
+            echo $code.": ".$error_message."<br />";
+        }
+    }
+    
     private function _getVideoCode($youtubeLink)
     {
         $youtubeRegex = '/^(?:https?:\/\/)?(?:www\.)?(?:youtu\.be\/|youtube\.com\/(?:embed\/|v\/|'

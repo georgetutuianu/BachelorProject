@@ -33,8 +33,7 @@ class Cli_ErrorController extends Utility_Controller_CliGeneric
 	 */
 	public static function phpErrorsAction($errno, $errstr, $errfile, $errline, $errcontext)
 	{
-		
-
+        print_r($errno, $errstr, $errfile, $errline, $errcontext);
 		// skip the execution of the default php error handler
 		return true;
 	}

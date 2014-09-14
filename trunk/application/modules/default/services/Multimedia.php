@@ -29,8 +29,14 @@ class Service_Multimedia
         $authController = Zend_Auth::getInstance();
         $userDetails = $authController->getIdentity();
         $videoName = $this->_getVideoName($downloadLink);
+        $queueName = 'jobs';
+        
+        $connectionString = 'DefaultEndpointsProtocol=http;AccountName=licenta;AccountKey=kIldSIWX1maxG1xj+yw+SgBk+9DN6/oexbu+PwiwINIX6eySp4GMVXPrYDSDWon2mAdluWEThF/rmvMwKKuA4g==';
+        $queueRestProxy = WindowsAzure\Common\ServicesBuilder::getInstance()->createQueueService($connectionString);
         
         if ($retryRequest) {
+            // Create message.
+            $queueRestProxy->createMessage($queueName, base64_encode($retryRequest));
             return $this->_dbAdapter->update(
                 self::TABLE_NAME, 
                 array(
@@ -40,13 +46,16 @@ class Service_Multimedia
             );
         }
         
-        return $this->_dbAdapter->insert(
+        $this->_dbAdapter->insert(
             self::TABLE_NAME, array(
                 'link' => $downloadLink,
                 'video_name' => $videoName,
                 'user_email' => $userDetails['email']
             )
         );
+        $queueRestProxy->createMessage($queueName, base64_encode($this->_dbAdapter->lastInsertId()));
+        
+        return $this->_dbAdapter->lastInsertId();
     }
     
     public function collectGarbage($cronId)
@@ -76,11 +85,12 @@ class Service_Multimedia
         ));
         
         $youtubeDownloader = new yt_downloader($videoLink['video_link']);
-        $youtubeDownloader->set_downloads_dir($downloadDir . '/');
-        $youtubeDownloader->set_ffmpegLogs_dir($ffmpegLogsDir . '/');
+        $youtubeDownloader->set_downloads_dir($downloadDir . DIRECTORY_SEPARATOR);
+        $youtubeDownloader->set_ffmpegLogs_dir($ffmpegLogsDir . DIRECTORY_SEPARATOR);
         $youtubeDownloader->set_download_thumbnail(false);
         $youtubeDownloader->set_video_title($fileName);
         
+//        $youtubeDownloader->download_video(); exit;
         $youtubeDownloader->download_audio();
         $audioFileName = $youtubeDownloader->get_video_title();
        
@@ -131,9 +141,35 @@ class Service_Multimedia
     
     public function getVideoToConvert()
     {
+        $queueName = 'jobs';
+        
+        $connectionString = 'DefaultEndpointsProtocol=http;AccountName=licenta;AccountKey=kIldSIWX1maxG1xj+yw+SgBk+9DN6/oexbu+PwiwINIX6eySp4GMVXPrYDSDWon2mAdluWEThF/rmvMwKKuA4g==';
+        $queueRestProxy = WindowsAzure\Common\ServicesBuilder::getInstance()->createQueueService($connectionString);
+        
+        $listMessagesResult = $queueRestProxy->listMessages($queueName);
+        $messages = $listMessagesResult->getQueueMessages();
+        $message = $messages[0];
+        
+        $messageId = $message->getMessageId();
+        $popReceipt = $message->getPopReceipt();
+        
+        try {
+            $requestId = base64_decode($message->getMessageText());
+            // Delete message.
+            $queueRestProxy->deleteMessage($queueName, $messageId, $popReceipt);
+        }
+        catch(ServiceException $e){
+            // Handle exception based on error codes and messages.
+            // Error codes and messages are here: 
+            // http://msdn.microsoft.com/en-us/library/windowsazure/dd179446.aspx
+            $code = $e->getCode();
+            $error_message = $e->getMessage();
+            echo $code.": ".$error_message."<br />";
+        }
+        
         $selectQuery = $this->_dbAdapter->select();
         $selectQuery->from(self::TABLE_NAME, array())
-                    ->where("download_status = '?'", self::DOWNLOAD_STATUS_WAITING)
+                    //->where("download_status = '?'", self::DOWNLOAD_STATUS_WAITING)
                     ->columns(
                         array(
                             'id' => 'id',
@@ -141,6 +177,7 @@ class Service_Multimedia
                         )
                     )
                     ->order('added DESC')
+                    ->where('id = ?', $requestId)
                     ->limit(1);
         
         return $this->_dbAdapter->fetchRow($selectQuery);

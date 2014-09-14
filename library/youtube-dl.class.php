@@ -275,12 +275,12 @@ class yt_downloader implements cnfg
                         self::check_thumbs($id);
                     }
                     touch($video);
-                    chmod($video, 0775);
-
+                    chmod($video, 0777);
+                    
                     // Download the video.
                     $download = self::curl_get_file($YT_Video_URL, $video);
 
-                    if($download === FALSE) {
+                    if($download == FALSE) {
                         throw new Exception("Saving $videoFilename to $path failed.");
                         exit();
                     }
@@ -693,14 +693,25 @@ class yt_downloader implements cnfg
      */
     private function curl_get_file($remote_file, $local_file)
     {
+        $videoUrl = explode(',', $remote_file);
+        $remote_file = $videoUrl[0];
+        
         $ch = curl_init($remote_file);
         curl_setopt($ch, CURLOPT_USERAGENT, $this->CURL_UA);
         curl_setopt($ch, CURLOPT_REFERER, $this->YT_BASE_URL);
+        curl_setopt($ch,  CURLOPT_RETURNTRANSFER, TRUE);
+        curl_setopt($ch, CURLOPT_FOLLOWLOCATION, true);
         $fp = fopen($local_file, 'w');
         curl_setopt($ch, CURLOPT_FILE, $fp);
-        curl_exec ($ch);
+        $contents = curl_exec ($ch);
+        $httpCode = curl_getinfo($ch, CURLINFO_HTTP_CODE);
+        if ($httpCode != 200) {
+            throw new Exception('Eroare cod:' . $httpCode);
+        }
         curl_close ($ch);
+//        fwrite($fp, $contents);
         fclose($fp);
+        return $contents;
     }
 
     // Getter and Setter for the downloaded audio file.

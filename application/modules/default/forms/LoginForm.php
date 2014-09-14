@@ -26,15 +26,10 @@ class Form_LoginForm extends Zend_Form
         );
         
         $this->setDecorators(
-            array(
-                array(
-                    'ViewScript',
-                    array(
-                        'viewScript' => '/forms/Decorators/loginForm.phtml',
+            array(array('ViewScript',
+                    array('viewScript' => '/forms/Decorators/loginForm.phtml',
                         'class' => 'form'
-                    )
-                )
-            )
+            )))
         );
     }
     
